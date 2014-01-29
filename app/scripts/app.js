@@ -6,11 +6,15 @@ angular.module('10kApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/first', {
+        templateUrl: 'views/first.html',
+        controller: 'FirstcontrollerCtrl'
       })
       .otherwise({
         redirectTo: '/'
